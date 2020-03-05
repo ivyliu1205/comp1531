@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% block body %}
+
+
+<html>
+	<body>
+		<div style="padding: 50px">
+			<h1>BOOKING SYSTEM LOG-IN</h1>
+			<hr/>
+			<br/>
+		<div>
+	</body>
+
+
+
+    <div id="id01" class="modal">
+
+      
+    <form action="{{ url_for('login' )}}" method="POST">
+        <div class="container">
+            <label for="Email"><b>Username(EMAIL)</b></label>
+            <input type="text" placeholder="Enter Email" name="Email" required>
+
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="Password" required>
+                <font size="3" color="red">Wrong password</font><br>
+            <button type="submit">Login</button>
+            </div>
+
+        <div class="container" style="background-color:#f1f1f1">
+          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+          <span class="psw">Forgot <a href="#">PASSWORD?</a></span>
+        </div>
+      </form>
+    </div>
+</html>
+
+
+{% endblock %}

@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block body %}
+<br/>
+
+<h3>{{ patient }}</h3>
+
+
+{% if current_user.is_provider() == true %}
+<div>
+  <form action="http://127.0.0.1:54272/" method='POST'>
+    <div style="margin: 10px 0px">
+		<label>Send Referral</label><br/>
+		<input name="receiver_email" placeholder="Receiver Email"/>
+    </div>
+  </form>
+  <a href="{{url_for('send_referral', rego=appointment.rego)}}"><button>Refer</button></a>
+</div>
+
+
+<div>
+  <h1>History</h1>
+</div>
+{% endif %}
+{% endblock %}

@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="body_style">
+
+<table id="customers">
+      <col width="80">
+      <col width="80">
+      <col width="80">
+      <col width="80">
+      <col width="80">
+      <col width="80">
+
+    <h2>Future Appoinments</h2>
+
+      <tr>
+          <th>Appointment Type</th>
+          <th>Starts</th>
+          <th>Ends</th>
+          <th>Patient</th>
+          <th>Start Appointment</th>
+      </tr>
+      <tr>
+          <td>{{ appointment.type }}</td>
+          <td>{{ appointment.start }}</td>
+          <td>{{ appointment.end }}</td>
+          <td>{{ appointment.patient_email }}</td>
+          <td>
+              <form method="post">
+                  <button type="submit" name="start">Start</button>
+              </form>
+          </td>
+      </tr>
+</table>
+
+
+
+{% endblock %}
