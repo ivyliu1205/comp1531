@@ -1,0 +1,6 @@
+<<<<<<< HEAD
+i have nothing to say
+=======
+add a word
+>>>>>>> first_new_branch
+i don't have anything to say.
