@@ -1,0 +1,83 @@
+{% extends 'base.html' %}
+{% block body %}
+<br/>
+
+{% if current_user.is_patient() == true %}
+<!--information-->
+<div>
+  <h1>Information:</h1>
+  <table id="centre_detail">
+          <col width="100">
+          <col width="80">
+          <col width="80">
+          <col width="100">
+
+          {% for centre in centre %}
+          <tr>
+            <td>abn</td>
+            <td>{{ centre.abn }}</td>
+          </tr>
+          <tr>
+            <td>name</td>
+            <td>{{ centre.name }}</td>
+          </tr>
+          <tr>
+            <td>suburb</td>
+            <td>{{ centre.suburb }}</td>
+          </tr>
+          <tr>
+            <td>phone</td>
+            <td>{{ centre.phone }}</td>
+          </tr>
+          <tr>
+            <td>services</td>
+            <td>{{ centre.services }}</td>
+          </tr>
+          <tr>
+            <td>ratings</td>
+            <td>{{ centre.ratings }}</td>
+          </tr>
+          {% endfor %}
+</table>
+<div>
+
+<!--rate-->
+<div>
+  <form method='POST'>
+    <div style="margin: 10px 0px">
+		<label>Rate</label><br/>
+		<input name="rate" step="1" min="1" max="10"/"/>
+    </div>
+  </form>
+  <a href="{{url_for('rate', rego=appointment.rego)}}"><button>Rate</button></a>
+</div>
+
+<!--Make Appointments-->
+<div>
+  <h1>Make Appointment</h1>
+  <table id="service_list">
+          <col width="100">
+          <col width="80">
+          <col width="80">
+          <col width="100">
+
+
+          <tr>
+            <th>Service Type</th>
+            <th>Book</th>
+          </tr>
+          {% for provider in provider %}
+                <tr>
+                   <td>
+                    {{ provider.service }}
+                   </td>
+                   <td>
+                   <a href="{{url_for('book_appointments')}}"><button>Book</button></a>
+                   </td>
+                </tr>
+        {% endfor %}
+</table>
+</div>
+
+{% endif %}
+{% endblock %}

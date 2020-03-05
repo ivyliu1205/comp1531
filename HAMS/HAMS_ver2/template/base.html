@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+
+<!-- Tab Menu -->
+{% if current_user.is_anonymous %}
+    <a href="{{ url_for('home') }}">Login</a>
+    <a href="{{ url_for('appointments') }}">Register</a>
+
+
+{% elif current_user.is_admin() == true %}
+    <a href="{{ url_for('home') }}">Home</a>
+    <a href="{{ url_for('appointments') }}">Appointments</a>
+    <a href="{{ url_for('history') }}">History</a>
+    <a href="{{ url_for('search') }}">Search</a>
+    <a href="{{ url_for('logout') }}">Logout</a>
+
+{% else %}
+    <a href="{{ url_for('home') }}">Home</a>
+    <a href="{{ url_for('appointments_pro') }}">Appointments</a>
+    <a href="{{ url_for('history_pro') }}">History</a>
+    <a href="{{ url_for('logout') }}">Logout</a>
+{% endif %}
+
+<br>
+
+<!-- Main Content Section -->
+{% block body %}{% endblock %}
+
+</body>
+</html>

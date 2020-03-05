@@ -1,0 +1,11 @@
+centre_type,abn,name,phone,suburb,opening time
+'Hospital', '1111', 'Sydney Children Hospital', '93821111 ', 'Randwick',08:00 - 18:00(Monday to Sunday)
+'MedicalCentre', '1112', 'UNSW Health Service', '93855425 ', 'Kensington',08:00 - 18:00(Monday to Sunday)
+'Hospital', '1113', 'Prince of Wales Hospital', '93821118 ', 'Randwick',08:00 - 18:00(Monday to Sunday)
+'Hospital', '1114', 'Royal Prince Alfred Hospital', '95156111 ', 'Sydney',08:00 - 18:00(Monday to Sunday)
+'MedicalCentre', '1115', 'USYD Health Service', '93513484', 'Darlington',09:00 - 18:00(Monday to Sunday)
+'MedicalCentre', '1116', 'UTS Health Service', '95141177', 'Ultimo',09:00 - 18:00(Monday to Sunday)
+'Hospital', '1117', 'St Vincent's Hospital', '93822222', 'Randwick',09:00 - 18:00(Monday to Saturday)
+'Hospital', '1118', 'East Sydney Private Hospital', '90012000', 'Woolloomooloo',09:00 - 18:00(Monday to Saturday)
+'MedicalCentre', '1119', 'Randwick Doctors Medical Centre', '80470988', 'Randwick',09:00 - 18:00(Monday to Saturday)
+'MedicalCentre', '1120', 'Royal Randwick Medical Centre', '94698000', 'Randwick',09:00 - 18:00(Monday to Saturday)

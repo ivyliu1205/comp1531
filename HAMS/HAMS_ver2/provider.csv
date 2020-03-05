@@ -1,0 +1,30 @@
+provider_name,provider_email,provider_type,password,phone,ratings
+Toby,toby@gmail.com,Pathologist,cs1531,0412345678,10
+Gary,gary@gmail.com,GP,cs1531,0412345679,10
+Samue,samuel@gmail.com,GP,cs1531,0412345680,10
+Sid,sid@gmail.com,Pathologist,cs1531,0412345789,10
+Michael,michael@gmail.com,Physiotherapist,cs1531,0412335679,10
+Anna,anna@gmail.com,GP,cs1531,0412345359,10
+Thomas,thomas@gmail.com,Pharmacist,cs1531,0413345679,10
+Ian,ian@gmail.com,Physiotherapist,cs1531,0412347679,10
+Iamdoctor,iamdoctor@gmail.com,gynecologist,iamdoctor,0442345679,10
+Doyouwantdoctor,doyouwantdoctor@gmail.com,GP,doyouwantdoctor,0412875679,10
+Isabella,isabella@unsw.com,Dentist,isabella,0412345697,10
+Fangyi,fangyi@unsw.com,Dermatologist,fangyi,0412354679,10
+Ivy,ivy@unsw.com,Child pathologist,ivy,0412345655,10
+Jasmine,jasmine@unsw.com,Dentist,jasmine,0412345666,10
+Ian,ian@unsw.com,Pharmacist,ian,0412345677,10
+Clare,clare@unsw.com,Physician,clare,0412345688,10
+Eric,eric@unsw.com,Cardiologist,eric,0412345699,10
+Ed,ed@unsw.com,Physician,ed,0412345111,10
+Kim,kim@unsw.com,Cardiologist,kim,0412345222,10
+Steve,steve@unsw.com,Physiotherapist,steve,0412345333,10
+Amy,amy@unsw.com,Dentist,amy,0412345444,10
+Iamdoctor,iamdoctor@unsw.com,Physician,iamdoctor,0412345555,10
+Aneeke,aneeke@unsw.com,Ophthalmologists,aneeke,0412345666,10
+Tammy,tammy@unsw.com,Ophthalmologists,tammy,0412345777,10
+Tomas,tomas@unsw.com,GP,tomas,0412345888,10
+Trent,trent@unsw.com,Child pathologist,trent,0412345999,10
+Andrew,andrew@unsw.com,Pharmacist,andrew,0412345000,10
+Andrea,andrea@unsw.com,Pathologist,andrea,0412111679,10
+Sam,sam@unsw.com,Dentist,sam,0412345679,10
